@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+let inputdiemvatly;
+let inputdiemhoahoc;
+let inputdiemsinhhoc;
+
+inputdiemvatly=prompt("Nhập điểm vật lý: ");
+inputdiemhoahoc=prompt("Nhập điểm hóa học: ");
+inputdiemsinhhoc=prompt("Nhập điểm sinh học: ");
+
+
+inputdiemvatly=parseFloat(inputdiemvatly);
+inputdiemhoahoc=parseFloat(inputdiemhoahoc);
+inputdiemsinhhoc=parseFloat(inputdiemsinhhoc);
+
+let diemtong = (inputdiemvatly+inputdiemhoahoc+inputdiemsinhhoc);
+document.write("Điểm tổng là: "+ diemtong.toFixed(2));
+document.write("<br/>")
+
+let diemtrungbinh = (inputdiemvatly+inputdiemhoahoc+inputdiemsinhhoc)/3;
+document.write("Điểm trung  là: " + diemtrungbinh.toFixed(2));
+
+</script>
+</body>
+</html>
